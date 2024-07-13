@@ -1,0 +1,27 @@
+.tool {
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+.tool .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    max-width: 300px;
+    background-color: var(--primary);
+    color: var(--light-background);
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+
+    position: absolute;
+    left: -35px;
+    top: 35px;
+    z-index: 1;
+}
+
+.tool:hover .tooltiptext {
+    visibility: visible;
+}

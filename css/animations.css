@@ -1,0 +1,28 @@
+.fadeIn{
+    opacity: 0;
+}
+
+.scalable {
+    transform: scale(0);
+    transition: all 1s;
+  }
+
+.scalable.animate {
+  transform: scale(1);
+}
+
+.lan-selector{
+    width: 22px;
+    transition: 0.3s;
+}
+
+.lan-selector:not(.lan-selected):hover{
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+
+.lan-selected{
+    border: solid 2px var(--accent);
+    border-radius: 50%;
+    transform: scale(1.3);
+}

@@ -1,0 +1,390 @@
+/* Change color and Fonts in root ↙ */
+:root {
+    --primary: #222831;
+    --secontary: #31363F;
+    --accent: #76abae;
+    --accent-hover: #598f92;
+    --accent-shadow: #76abae77;
+    --light-background: #eee;
+    --light-font: #eee;
+    --opeque-light-bg: #eeea;
+    --btn-border-radius: 0;
+    --body-font: "Helvetica", Sans-serif;
+    --header-font: "Ubuntu", sans-serif;
+}
+
+
+body {
+    font-family: var(--body-font);
+}
+
+.hidden {
+    display: none;
+    transition: display 0.5s;
+}
+
+.row {
+    margin: 0;
+}
+
+.btn{
+    border-radius: 50px;
+    padding: 0.6rem 1.2rem;
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    border-color: var(--accent);
+
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+}
+
+.btn-primary:focus {
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+    box-shadow: var(--accent-shadow);
+}
+
+h1 {
+    font-family: var(--header-font);
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: var(--header-font);
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: var(--header-font);
+    font-size: 1.6rem;
+
+}
+
+hr.separator {
+    margin: 0;
+    border: dotted 2px var(--accent);
+}
+
+section {
+    padding: 70px 15%;
+}
+
+img:not(.navbar-img, .lan-selector) {
+    width: -webkit-fill-available;
+}
+
+.rounded-img{
+    border-radius: 15px;
+}
+
+.navbar-img{
+    border-radius: 50%;
+}
+
+video{
+    width: -webkit-fill-available;
+    border-radius: 15px;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
+
+/* Navigation */
+#navigation {
+    background-color: var(--primary);
+    color: var(--light-font);
+    position: fixed;
+    padding: 0 15%;
+    width: 100%;
+    z-index: 10;
+}
+
+#navigation a.nav-link{
+    color: var(--light-font);
+}
+
+#navbarNavDropdown {
+    align-items: end;
+}
+
+#navigation .nav-link,
+.navbar-brand {
+    text-decoration-color: var(--primary);
+}
+
+#navigation .nav-item:hover .nav-link,
+.navbar-brand:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    transition: text-decoration-color 0.5s;
+}
+
+.dropdown-item:active {
+    background-color: var(--accent);
+}
+
+/* About me  */
+#about {
+    min-height: 75vh;
+    height: fit-content;
+    background: url(../images/about-me-bg.png);
+}
+
+#animated-background {
+    min-height: fit-content;
+}
+
+.opaque-bg {
+    background-color: transparent;
+    transition: background-color 0.5s;
+}
+
+.opaque-bg:hover {
+    background-color: var(--opeque-light-bg);
+    transition: background-color 0.5s;
+}
+
+.accordion-button,
+.accordion-body {
+    padding: 0 5px;
+}
+
+.accordion {
+    margin-bottom: 10px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: inherit;
+    background-color: var(--opeque-light-bg);
+}
+
+.accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+
+.btn-outline-dark:hover i {
+    color: var(--accent);
+    transition: color 0.5s;
+}
+
+/* Education */
+.gradient-bg {
+    background: linear-gradient(-1deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.1) 100%);
+    height: 40px;
+    margin-top: -35px;
+    z-index: 2;
+    position: relative;
+}
+
+/* Skill */
+#skills {
+    background-color: var(--light-background);
+}
+
+#skills img {
+    transition: transform 0.5s;
+}
+
+#skills img:hover {
+    transform: scale(1.4);
+    transition: transform 0.5s;
+}
+
+/* Select next image */
+#skills img:hover+img {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+/* Select previous image */
+#skills img:has(+ img:hover) {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+/* Scrollable */
+div.scroll-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.scroll-container img {
+    width: 120px;
+    padding: 10px 20px;
+}
+
+/* Projects */
+.project-cat-buttons .btn {
+    margin: 12px 16px;
+}
+
+#project-carousel-section {
+    background-image: url(../images/seamless-background.png);
+    background-size: cover;
+    padding: 50px 5%;
+}
+
+#project-carousel{
+    min-height: 42vh;
+}
+
+.carousel-frame {
+    background: linear-gradient(90deg, rgba(238, 238, 238, 0.8) 40%, rgba(255, 255, 255, 0) 100%);
+    padding: 15px 0;
+}
+
+#project-carousel-section .btn {
+    margin: 12px 0;
+}
+
+#project-carousel-section .row {
+    padding: 20px 5%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 7%;
+}
+
+.underline-accent {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+}
+
+#project-carousel-section p {
+    font-size: 1.1rem;
+}
+
+/* Certifications */
+#certifications img {
+    width: 120px;
+    margin: 10px 10px 20px 10px;
+    transition: transform 0.5s;
+}
+
+#certifications img:hover {
+    transform: scale(1.1, 1.1);
+    transition: transform 0.5s;
+}
+
+#certifications h3 {
+    font-size: 1.3rem;
+}
+
+/* Call to Action */
+#contact {
+    color: var(--light-background);
+}
+
+#contact .nav-link {
+    display: ruby;
+    color: var(--light-background);
+    padding-left: 0;
+    font-size: 1.2rem;
+}
+
+#contact .nav-link:hover {
+    color: var(--accent) !important;
+    padding-left: 3px;
+    transition: padding 0.3s;
+}
+
+/* Footer */
+#footer {
+    background-color: var(--primary);
+    padding: 10px 15%;
+    text-align: center;
+}
+
+#footer p {
+    margin-bottom: 0;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Projects page*/
+#projects-heading{ padding-bottom: 0;}
+
+.tech-desc{
+    background-color: var(--accent);
+    border-radius: 50px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project-accordion .accordion-item,
+.project-accordion .accordion-button {
+    background-color: transparent;
+    border: none;
+    color: var(--secontary);
+}
+
+
+@media (max-width: 768px) {
+    h1 {font-size: 2.5rem;}
+    h2{font-size: 2rem;}
+    h3 {font-size: 1.3rem;}
+
+    section {
+        padding: 40px 5px;
+    }
+
+    #about {
+        min-height: 100vh;
+    }
+
+    #navigation {
+        padding: 5px;
+    }
+
+    .navbar-nav .dropdown-menu {
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    .navbar-nav .dropdown-menu a{
+        color: var(--light-font);
+    }
+
+    #project-carousel-section {
+        padding: 40px 0px;
+    }
+
+    #project-carousel-section .row {
+        padding: 10px 10px;
+    }
+
+    .project-cat-buttons .btn {
+        padding: 6px 8px;
+        margin: 6px;
+        font-size: 1rem;
+    }
+
+    #english::after{
+        content: ' English';
+    }
+
+    #greek::after{
+        content: ' Greek';
+    }
+}
