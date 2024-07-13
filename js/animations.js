@@ -25,7 +25,7 @@ $(document).ready(function() {
 
     // Mark selected language
     const url = $(location).attr('href');
-    if(url.includes('gr')){
+    if(url.includes('-gr')){
         $('#greek>img').addClass('lan-selected');
     }else{
         $('#english>img').addClass('lan-selected');
