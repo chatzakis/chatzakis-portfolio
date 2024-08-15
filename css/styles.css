@@ -80,6 +80,8 @@ section {
 
 img:not(.navbar-img, .lan-selector) {
     width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
 }
 
 .rounded-img{
@@ -92,6 +94,8 @@ img:not(.navbar-img, .lan-selector) {
 
 video{
     width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
     border-radius: 15px;
 }
 
