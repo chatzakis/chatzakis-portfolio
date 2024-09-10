@@ -1,18 +1,19 @@
 $(document).ready(function() {
+    
     // Scroll effect fadeIn
-    $(window).scroll( function(){
+    function triggerfadeInAnimation(){
         $('.fadeIn').each( function(i){
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
-
+            
             if( bottom_of_window > bottom_of_object  - 50){
                 $(this).animate({'opacity':'1'}, 800);
             }
         }); 
-    });
+    }
 
     // Scroll effect grow
-    $(window).scroll( function(){
+    function triggerScaleAnimation(){
         $('.scalable').each( function(i){
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -21,7 +22,13 @@ $(document).ready(function() {
                 $(this).addClass('animate');
             }
         }); 
-    });
+    }
+
+    triggerScaleAnimation();
+    triggerfadeInAnimation();
+    $(window).on('scroll', triggerScaleAnimation);
+    $(window).on('scroll', triggerfadeInAnimation);
+
 
     // Mark selected language
     const url = $(location).attr('href');
