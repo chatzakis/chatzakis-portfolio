@@ -237,13 +237,10 @@ div.scroll-container img {
 }
 
 /* Projects */
-.project-cat-buttons .btn {
-    margin: 12px 16px;
-}
-
 #project-carousel-section {
     background-image: url(../images/seamless-background.png);
     background-size: cover;
+    background-position: center;
     padding: 50px 5%;
 }
 

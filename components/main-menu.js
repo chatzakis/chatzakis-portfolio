@@ -8,15 +8,8 @@ document.write(`
     <li class="nav-item">
     <a class="nav-link" href="./index.html#skills">Skills</a>
     </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Projects
-      </a>
-      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <li><a class="dropdown-item" href="./projects.html#web-projects">Web</a></li>
-        <li><a class="dropdown-item" href="./projects.html#wordpress">WordPress</a></li>
-        <li><a class="dropdown-item" href="./projects.html#android">Android</a></li>
-      </ul>
+    <li class="nav-item">
+      <a class="nav-link" href="./projects.html">Projects</a>
     </li>
     <li class="nav-item">
     <a class="nav-link" href="./index.html#research">Research</a>

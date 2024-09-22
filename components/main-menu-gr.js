@@ -8,15 +8,8 @@ document.write(`
     <li class="nav-item">
     <a class="nav-link" href="./home-gr.html#skills">Δεξιότητες</a>
     </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Έργα
-      </a>
-      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <li><a class="dropdown-item" href="./projects-gr.html#web-projects">Διαδίκτυο</a></li>
-        <li><a class="dropdown-item" href="./projects-gr.html#wordpress">WordPress</a></li>
-        <li><a class="dropdown-item" href="./projects-gr.html#android">Android</a></li>
-      </ul>
+    <li class="nav-item">
+      <a class="nav-link" href="./projects-gr.html">Έργα</a>
     </li>
     <li class="nav-item">
     <a class="nav-link" href="./home-gr.html#research">Έρευνα</a>
