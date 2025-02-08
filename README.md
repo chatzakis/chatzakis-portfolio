@@ -3,3 +3,4 @@ This is my custom portfolio website. Read about me, my skills, my projects and m
 Contact me for more info or requests!
 
 ### at [chatzakis.github.io/chatzakis-portfolio](https://chatzakis.github.io/chatzakis-portfolio/)
+Find my new website at [www.chatzakisdev.gr](https://www.chatzakisdev.gr/)
