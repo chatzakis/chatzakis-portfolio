@@ -1,5 +1,5 @@
-# This is my online portfolio 🌐💼
+# This is my online portfolio (depricated since FEB-2025) 🌐💼
 This is my custom portfolio website. Read about me, my skills, my projects and more!
 Contact me for more info or requests!
 
-### at [Chatzakisdev.gr](https://www.chatzakisdev.gr/)
+### at [chatzakis.github.io/chatzakis-portfolio](https://chatzakis.github.io/chatzakis-portfolio/)
